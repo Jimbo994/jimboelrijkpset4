@@ -9,50 +9,47 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
+    android:background="@android:color/white"
     tools:context="com.example.jim.jimboelrijkpset4.MainActivity"
     android:weightSum="1">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/to_do_list_app"
-        android:textSize="40sp"
-        android:padding="@dimen/activity_horizontal_margin"
-        android:textColor="@android:color/white"
-        android:background="@android:color/darker_gray" />
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:text="@string/to_do_list_app"-->
+        <!--android:textSize="40sp"-->
+        <!--android:padding="@dimen/activity_horizontal_margin"-->
+        <!--android:textColor="@android:color/black"/>-->
+        <!--//android:background="@android:color/darker_gray"-->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/long_press_and_item_to_remove_it"
-        />
+    <!--<ImageButton-->
+        <!--android:layout_width="55dp"-->
+        <!--android:layout_height="54dp"-->
+        <!--android:paddingTop="5dp"-->
+        <!--android:layout_gravity="end"-->
+        <!--android:src="@drawable/plusbutton"-->
+        <!--android:adjustViewBounds="true"-->
+        <!--android:scaleType="fitCenter"-->
+        <!--android:id="@+id/add_button"-->
+        <!--android:background="@android:color/white"-->
+        <!--android:onClick="add"-->
+        <!--/>-->
+
 
     <ListView
         android:layout_width="wrap_content"
-        android:layout_height="433dp"
-        android:id="@+id/list">
+        android:layout_height="0dp"
+        android:id="@+id/list"
+        android:layout_weight="0.52">
     </ListView>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:text="@string/long_press_and_item_to_remove_it"-->
+        <!--android:id="@+id/textView2"-->
+        <!--android:textColor="@android:color/black"/>-->
 
-        <EditText
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:id="@+id/add_text"
-        />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/add"
-            android:id="@+id/add_button"
-            android:onClick="add"
-            />
-    </LinearLayout>
 </LinearLayout>
